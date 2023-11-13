@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+</head>
+<body>
+  <h1>Hello. This is my project</h1>
+  <a href="{{ url_for('register') }}">Register</a>
+  <ul>
+    {% for username in user_list %}
+      <h3>{{ username[0] }}</h3>
+    {% endfor %}
+  </ul>
+</body>
+</html>
